@@ -1,0 +1,28 @@
+Package: googlesecretmanager
+Title: Manage Google Cloud Platform Secrets with R
+Version: 0.2.1
+Authors@R: 
+    person("Brancen", "Gregory", , "brancengregory@gmail.com", role = c("aut", "cre"))
+Description: 
+    Create, inspect, update, and delete Google Cloud Secret Manager
+    secrets and their versions directly from R. The package wraps the
+    Secret Manager API v1 and uses 'gargle' for authentication, supporting
+    interactive OAuth, service account keys, and pre-existing tokens.
+    Secret and version metadata are returned as S3 objects with print
+    methods that avoid revealing secret values, and listing operations
+    return data frames with one row per secret or version. Default
+    project settings, labels, filters, and the full version lifecycle
+    (add, access, enable, disable, and delete) are supported.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: cli, dplyr, gargle (>= 1.5.2), glue, httr (>= 1.4.0), jsonlite
+        (>= 1.8.0), lifecycle, purrr, rlang, utils
+Depends: R (>= 4.1)
+URL: https://brancengregory.github.io/googlesecretmanager/
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-10-27 17:12:40 UTC; brancengregory
+Author: Brancen Gregory [aut, cre]
+Maintainer: Brancen Gregory <brancengregory@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-11-12 15:30:18 UTC
